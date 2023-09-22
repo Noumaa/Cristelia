@@ -19,7 +19,7 @@ class Jobs
         };
 
         return new MenuForm("Métiers", "", [
-            new Button("Mineur", $onSubmit, Image::path("textures/items/iron_pickaxe.png")),
+            new Button("Miner", $onSubmit, Image::path("textures/items/iron_pickaxe.png")),
             new Button("Farmer", $onSubmit, Image::path("textures/items/iron_hoe.png")),
             new Button("Hunter", $onSubmit, Image::path("textures/items/leather.png")),
             new Button("Alchimiste", $onSubmit, Image::detect("textures/items/blaze_rod.png")),
