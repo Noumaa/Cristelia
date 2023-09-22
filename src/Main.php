@@ -15,12 +15,13 @@ use nouma\cristelia\blocks\RubyOre;
 use nouma\cristelia\commands\CristeliaCommand;
 use nouma\cristelia\entities\RubyGolem;
 use nouma\cristelia\items\DiamondUnclaimFinder;
-use nouma\cristelia\items\Ruby;
-use nouma\cristelia\items\RubyAxe;
-use nouma\cristelia\items\RubyHammer;
-use nouma\cristelia\items\RubyPickaxe;
-use nouma\cristelia\items\RubyShovel;
-use nouma\cristelia\items\RubySword;
+use nouma\cristelia\items\EmeraldSword;
+use nouma\cristelia\items\ruby\Ruby;
+use nouma\cristelia\items\ruby\RubyAxe;
+use nouma\cristelia\items\ruby\RubyHammer;
+use nouma\cristelia\items\ruby\RubyPickaxe;
+use nouma\cristelia\items\ruby\RubyShovel;
+use nouma\cristelia\items\ruby\RubySword;
 use nouma\cristelia\items\unclaimfinder\PlayerListener;
 use nouma\cristelia\jobs\BreakEvent;
 use pocketmine\command\Command;
@@ -66,6 +67,7 @@ class Main extends PluginBase {
         CustomiesItemFactory::getInstance()->registerItem(RubyAxe::class, "cristelia:ruby_axe", "Ruby Axe");
         CustomiesItemFactory::getInstance()->registerItem(RubyShovel::class, "cristelia:ruby_shovel", "Ruby Shovel");
         CustomiesItemFactory::getInstance()->registerItem(RubyHammer::class, "cristelia:ruby_hammer", "Ruby Hammer");
+        CustomiesItemFactory::getInstance()->registerItem(EmeraldSword::class, "cristelia:emerald_sword", "Emerald Sword");
 
         CustomiesItemFactory::getInstance()->registerItem(DiamondUnclaimFinder::class, "cristelia:diamond_unclaim_finder", "Diamond Unclaim Finder");
 
@@ -77,6 +79,7 @@ class Main extends PluginBase {
         RubyAxe::registerRecipes($this);
         RubyShovel::registerRecipes($this);
         RubyHammer::registerRecipes($this);
+        EmeraldSword::registerRecipes($this);
 
         DiamondUnclaimFinder::registerRecipes($this);
 

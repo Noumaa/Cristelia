@@ -1,6 +1,6 @@
 <?php
 
-namespace nouma\cristelia\items;
+namespace nouma\cristelia\items\ruby;
 
 use customiesdevs\customies\item\component\CreativeGroupComponent;
 use customiesdevs\customies\item\component\DiggerComponent;

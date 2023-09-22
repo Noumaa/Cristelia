@@ -1,6 +1,6 @@
 <?php
 
-namespace nouma\cristelia\items;
+namespace nouma\cristelia\items\ruby;
 
 use customiesdevs\customies\item\CreativeInventoryInfo;
 use customiesdevs\customies\item\ItemComponents;

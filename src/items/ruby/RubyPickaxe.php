@@ -1,6 +1,6 @@
 <?php
 
-namespace nouma\cristelia\items;
+namespace nouma\cristelia\items\ruby;
 
 use customiesdevs\customies\item\component\CreativeGroupComponent;
 use customiesdevs\customies\item\component\DiggerComponent;
@@ -13,27 +13,26 @@ use pocketmine\crafting\ShapedRecipe;
 use pocketmine\item\Item;
 use pocketmine\item\ItemIdentifier;
 use pocketmine\item\Pickaxe;
-use pocketmine\item\Shovel;
 use pocketmine\item\Sword;
 use pocketmine\item\ToolTier;
 use pocketmine\item\VanillaItems;
 use pocketmine\plugin\PluginBase;
 
-class RubyShovel extends Shovel implements ItemComponents
+class RubyPickaxe extends Pickaxe implements ItemComponents
 {
     use ItemComponentsTrait;
 
     public function __construct(ItemIdentifier $identifier, string $name = "Unknown") {
         parent::__construct($identifier, $name, ToolTier::NETHERITE());
         $creativeInfo = new CreativeInventoryInfo(CreativeInventoryInfo::CATEGORY_EQUIPMENT);
-        $this->initComponent("ruby_shovel", $creativeInfo);
-        $this->addComponent((new DiggerComponent())->withTags(10, "dirt", "sand"));
+        $this->initComponent("ruby_pickaxe", $creativeInfo);
+        $this->addComponent((new DiggerComponent())->withTags(10, "stone", "metal", "diamond_pick_diggable"));
     }
 
     public static function registerRecipes(PluginBase $main) {
         $main->getServer()->getCraftingManager()->registerShapedRecipe(new ShapedRecipe(
             [
-                " R ",
+                "RRR",
                 " S ",
                 " S "
             ],
@@ -41,7 +40,7 @@ class RubyShovel extends Shovel implements ItemComponents
                 "R" => new ExactRecipeIngredient(CustomiesItemFactory::getInstance()->get("cristelia:ruby")),
                 "S" => new ExactRecipeIngredient(VanillaItems::STICK()),
             ],
-            [CustomiesItemFactory::getInstance()->get("cristelia:ruby_shovel")]
+            [CustomiesItemFactory::getInstance()->get("cristelia:ruby_pickaxe")]
         ));
     }
 }

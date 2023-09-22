@@ -16,14 +16,14 @@ use pocketmine\item\ToolTier;
 use pocketmine\item\VanillaItems;
 use pocketmine\plugin\PluginBase;
 
-class RubySword extends Sword implements ItemComponents
+class EmeraldSword extends Sword implements ItemComponents
 {
     use ItemComponentsTrait;
 
     public function __construct(ItemIdentifier $identifier, string $name = "Unknown") {
         parent::__construct($identifier, $name, ToolTier::NETHERITE());
         $creativeInfo = new CreativeInventoryInfo(CreativeInventoryInfo::CATEGORY_EQUIPMENT);
-        $this->initComponent("ruby_sword", $creativeInfo);
+        $this->initComponent("emerald_sword", $creativeInfo);
     }
 
     public static function registerRecipes(PluginBase $main) {
@@ -34,10 +34,10 @@ class RubySword extends Sword implements ItemComponents
                 " S "
             ],
             [
-                "R" => new ExactRecipeIngredient(CustomiesItemFactory::getInstance()->get("cristelia:ruby")),
+                "R" => new ExactRecipeIngredient(VanillaItems::EMERALD()),
                 "S" => new ExactRecipeIngredient(VanillaItems::STICK()),
             ],
-            [CustomiesItemFactory::getInstance()->get("cristelia:ruby_sword")]
+            [CustomiesItemFactory::getInstance()->get("cristelia:emerald_sword")]
         ));
     }
 }
