@@ -1,0 +1,6 @@
+jobs:
+  mineur:
+    BREAK:
+      Iron Ore: 5
+      Deepslate Iron Ore: 7
+      Ruby Ore: 20

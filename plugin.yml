@@ -1,0 +1,26 @@
+name: Cristelia
+
+main: nouma\cristelia\Main
+src-namespace-prefix: nouma\cristelia
+version: 0.0.1
+api: 5.5.0
+
+loadbefore: CustomCraft
+depend: Customies
+
+commands:
+  cristelia:
+    description: Cristelia command
+    permission: cristelia
+  jobs:
+    description: Jobs command
+    permission: cristelia
+
+permissions:
+  cristelia:
+    description: "Allows the user to run the Cristelia command"
+    # Default state of the permission. Explanation of each value:
+    # op: only op players have this permission by default
+    # true: everyone has this permission by default
+    # false: no one has this permission by default
+    default: true
