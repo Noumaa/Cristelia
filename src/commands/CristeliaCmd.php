@@ -1,16 +1,16 @@
 <?php
 
-namespace nouma\Cristelia\Commands;
+namespace nouma\cristelia\commands;
 
 use customiesdevs\customies\block\CustomiesBlockFactory;
 use customiesdevs\customies\item\CustomiesItemFactory;
-use nouma\Cristelia\Entities\RubyGolem;
-use nouma\Cristelia\Permission\Permissions;
+use nouma\cristelia\Entities\RubyGolem;
+use nouma\cristelia\permissions\Permissions;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\player\Player;
 
-class Cristelia extends Command
+class CristeliaCmd extends Command
 {
 
     public function __construct() {

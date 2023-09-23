@@ -1,6 +1,6 @@
 <?php
 
-namespace nouma\Cristelia\Permission;
+namespace nouma\cristelia\permissions;
 
 class Permissions {
 

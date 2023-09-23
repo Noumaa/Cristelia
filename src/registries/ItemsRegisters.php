@@ -1,14 +1,16 @@
 <?php
 
-namespace nouma\Cristelia\Registers;
+namespace nouma\cristelia\registries;
 
 use customiesdevs\customies\item\CustomiesItemFactory;
-use nouma\Cristelia\Customies\Items\Ruby\Ruby;
-use nouma\Cristelia\Customies\Items\Ruby\RubyAxe;
-use nouma\Cristelia\Customies\Items\Ruby\RubyPickaxe;
+use nouma\cristelia\items\ruby\Ruby;
+use nouma\cristelia\items\ruby\RubyAxe;
+use nouma\cristelia\items\ruby\RubyPickaxe;
 
 class ItemsRegisters {
-    public function __construct() {
+
+    public static function registerAll(): void
+    {
         CustomiesItemFactory::getInstance()->registerItem(Ruby::class, "cristelia:ruby", "Ruby");
         CustomiesItemFactory::getInstance()->registerItem(RubyAxe::class, "cristelia:ruby_axe", "Ruby Axe");
         CustomiesItemFactory::getInstance()->registerItem(RubyPickaxe::class, "cristelia:ruby_pickaxe", "Ruby Pickaxe");

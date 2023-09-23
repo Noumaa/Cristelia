@@ -1,11 +1,10 @@
 <?php
 
-namespace nouma\Cristelia\Listener;
+namespace nouma\cristelia\listeners;
 
 use pocketmine\event\Listener;
 use pocketmine\event\player\PlayerJoinEvent;
 use pocketmine\Server;
-
 
 class JoinListener implements Listener {
 

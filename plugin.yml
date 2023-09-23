@@ -1,12 +1,14 @@
-name: LinaCore
-main: nouma\Cristelia\Main
+name: Cristelia
+main: nouma\cristelia\Main
+
+src-namespace-prefix: nouma\cristelia
 version: 1.0.0
 api: 5.0.0
+
 authors:
-  - nouma
+  - Nouma
   - HacheBg
 
-loadbefore: CustomCraft
 depend: Customies
 
 commands:
@@ -17,8 +19,4 @@ commands:
 permissions:
   cristelia:
     description: "Allows the user to run the Cristelia command"
-    # Default state of the permission. Explanation of each value:
-    # op: only op players have this permission by default
-    # true: everyone has this permission by default
-    # false: no one has this permission by default
     default: true

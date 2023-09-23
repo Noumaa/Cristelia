@@ -1,8 +1,15 @@
 <?php
 
-namespace nouma\Cristelia\Registers;
+namespace nouma\cristelia\registries;
 
-use nouma\Cristelia\Customies\Items\Ruby\RubyAxe;
+use nouma\cristelia\blocks\RubyBlock;
+use nouma\cristelia\items\DiamondUnclaimFinder;
+use nouma\cristelia\items\EmeraldSword;
+use nouma\cristelia\items\ruby\RubyAxe;
+use nouma\cristelia\items\ruby\RubyHammer;
+use nouma\cristelia\items\ruby\RubyPickaxe;
+use nouma\cristelia\items\ruby\RubyShovel;
+use nouma\cristelia\items\ruby\RubySword;
 
 class RecipesRegisters {
     public function __construct() {

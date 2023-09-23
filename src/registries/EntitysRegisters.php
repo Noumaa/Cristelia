@@ -1,10 +1,10 @@
 <?php
 
 
-namespace nouma\Cristelia\Registers;
+namespace nouma\cristelia\registries;
 
 use customiesdevs\customies\entity\CustomiesEntityFactory;
-use nouma\Cristelia\entities\RubyGolem;
+use nouma\cristelia\entities\RubyGolem;
 
 class EntitysRegisters {
     public function __construct(){

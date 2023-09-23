@@ -1,8 +1,8 @@
 <?php
 
-namespace nouma\Cristelia\Commands\Staff;
+namespace nouma\cristelia\commands\staff;
 
-use nouma\Cristelia\Permission\Permissions;
+use nouma\cristelia\permissions\Permissions;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\console\ConsoleCommandSender;

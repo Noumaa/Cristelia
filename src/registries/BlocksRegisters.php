@@ -1,13 +1,13 @@
 <?php
 
 
-namespace nouma\Cristelia\Registers;
+namespace nouma\cristelia\registries;
 
 use customiesdevs\customies\block\CustomiesBlockFactory;
 use customiesdevs\customies\block\Material;
 use customiesdevs\customies\block\Model;
-use nouma\Cristelia\blocks\RubyBlock;
-use nouma\Cristelia\blocks\RubyOre;
+use nouma\cristelia\blocks\RubyBlock;
+use nouma\cristelia\blocks\RubyOre;
 use pocketmine\math\Vector3;
 
 class BlocksRegisters {

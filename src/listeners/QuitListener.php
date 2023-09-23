@@ -1,6 +1,6 @@
 <?php
 
-namespace nouma\Cristelia\Listener;
+namespace nouma\cristelia\listeners;
 
 use pocketmine\event\Listener;
 use pocketmine\event\player\PlayerQuitEvent;
