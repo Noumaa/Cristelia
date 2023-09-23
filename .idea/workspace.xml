@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2193426a-2239-4212-ac3a-0c1b0faa293e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ResourcePackGenerator.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,43 +32,44 @@
       <path value="F:/API PocketMine/API/PocketMine 5.6.0" />
     </include_path>
   </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 7
-}</component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 7
+}]]></component>
   <component name="ProjectId" id="2VfGeSjpujabnLfEQy7dDxSXAcS" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+  <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;hachebg&quot;,
-    &quot;last_opened_file_path&quot;: &quot;F:/API PocketMine/API/PocketMine 5.6.0&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;php.override.implement.member.chooser.php.doc&quot;: &quot;NONE&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "hachebg",
+    "last_opened_file_path": "F:/API PocketMine/API/PocketMine 5.6.0",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "php.override.implement.member.chooser.php.doc": "NONE",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\anthi\Desktop\LinaTest\plugins\Cristelia\src\items" />
       <recent name="D:\Windows\Documents\Serveurs MC\pocketmine\plugins\test\src\items" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Windows\Documents\Serveurs MC\pocketmine\plugins\Cristelia\resources\cristelia_pack\cristelia_pack" />
-      <recent name="D:\Windows\Documents\Serveurs MC\pocketmine\plugins\Cristelia\resources" />
+      <recent name="C:\Users\anthi\Desktop\LinaTest\plugins\Cristelia\src\items\ruby" />
+      <recent name="C:\Users\anthi\Desktop\LinaTest\plugins\Cristelia\src\items" />
+      <recent name="C:\Users\anthi\Desktop\LinaTest\plugins\Cristelia" />
       <recent name="D:\Windows\Documents\Serveurs MC\pocketmine\plugins\Cristelia\src\blocks" />
       <recent name="D:\Windows\Documents\Serveurs MC\pocketmine\plugins\Cristelia\src\items" />
     </key>
@@ -78,7 +77,7 @@
   <component name="RunManager">
     <configuration name="Start" type="ShConfigurationType">
       <option name="SCRIPT_TEXT" value="" />
-      <option name="INDEPENDENT_SCRIPT_PATH" value="false" />
+      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
       <option name="SCRIPT_PATH" value="$PROJECT_DIR$/../../start.cmd" />
       <option name="SCRIPT_OPTIONS" value="" />
       <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
@@ -105,8 +104,7 @@
       <workItem from="1695297893999" duration="16124000" />
       <workItem from="1695399377907" duration="2757000" />
       <workItem from="1695406716466" duration="1215000" />
-      <workItem from="1695422475489" duration="1510000" />
-      <workItem from="1695425396542" duration="1554000" />
+      <workItem from="1695422475489" duration="2926000" />
     </task>
     <servers />
   </component>
