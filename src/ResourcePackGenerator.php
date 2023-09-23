@@ -2,7 +2,6 @@
 
 namespace nouma\cristelia;
 
-use pocketmine\plugin\PluginBase;
 use Ramsey\Uuid\Uuid;
 use RecursiveDirectoryIterator;
 use RecursiveIteratorIterator;
