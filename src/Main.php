@@ -16,6 +16,7 @@ use nouma\cristelia\permissions\Permissions;
 use nouma\cristelia\registries\BlocksRegisters;
 use nouma\cristelia\registries\EntitysRegisters;
 use nouma\cristelia\registries\ItemsRegisters;
+use nouma\cristelia\registries\RecipesRegisters;
 use pocketmine\plugin\PluginBase;
 
 class Main extends PluginBase
@@ -34,6 +35,7 @@ class Main extends PluginBase
         ItemsRegisters::registerAll();
         new BlocksRegisters();
         new EntitysRegisters();
+        RecipesRegisters::registerAll($this);
 
         $this->getServer()->getPluginManager()->registerEvents(new JoinListener(), $this);
         $this->getServer()->getPluginManager()->registerEvents(new QuitListener(), $this);

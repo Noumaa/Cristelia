@@ -10,18 +10,21 @@ use nouma\cristelia\items\ruby\RubyHammer;
 use nouma\cristelia\items\ruby\RubyPickaxe;
 use nouma\cristelia\items\ruby\RubyShovel;
 use nouma\cristelia\items\ruby\RubySword;
+use nouma\cristelia\Main;
 
 class RecipesRegisters {
-    public function __construct() {
-        RubyBlock::registerRecipes($this);
 
-        RubySword::registerRecipes($this);
-        RubyPickaxe::registerRecipes($this);
-        RubyAxe::registerRecipes($this);
-        RubyShovel::registerRecipes($this);
-        RubyHammer::registerRecipes($this);
-        EmeraldSword::registerRecipes($this);
+    public static function registerAll(Main $main): void
+    {
+        RubyBlock::registerRecipes($main);
 
-        DiamondUnclaimFinder::registerRecipes($this);
+        RubySword::registerRecipes($main);
+        RubyPickaxe::registerRecipes($main);
+        RubyAxe::registerRecipes($main);
+        RubyShovel::registerRecipes($main);
+        RubyHammer::registerRecipes($main);
+        EmeraldSword::registerRecipes($main);
+
+        DiamondUnclaimFinder::registerRecipes($main);
     }
 }
