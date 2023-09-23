@@ -42,6 +42,8 @@ class Main extends PluginBase {
     {
         self::$instance = $this;
 
+        ResourcePackGenerator::generate();
+
         if (!is_dir(Main::getInstance()->getDataFolder() . "players/"))
             mkdir(Main::getInstance()->getDataFolder() . "players/");
 

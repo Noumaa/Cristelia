@@ -1,0 +1,30 @@
+{
+    "resource_pack_name": "vanilla",
+    "texture_name": "atlas.items",
+    "texture_data": {
+        "ruby": {
+            "textures": "textures/items/ruby"
+        },
+        "ruby_sword": {
+            "textures": "textures/items/ruby_sword"
+        },
+        "ruby_pickaxe": {
+            "textures": "textures/items/ruby_pickaxe"
+        },
+        "ruby_axe": {
+            "textures": "textures/items/ruby_axe"
+        },
+        "ruby_shovel": {
+            "textures": "textures/items/ruby_shovel"
+        },
+        "ruby_hammer": {
+            "textures": "textures/items/ruby_hammer"
+        },
+        "diamond_unclaim_finder": {
+            "textures": "textures/items/diamond_unclaim_finder"
+        },
+        "burger_beef": {
+            "textures": "textures/items/burger_beef"
+        }
+    }
+}

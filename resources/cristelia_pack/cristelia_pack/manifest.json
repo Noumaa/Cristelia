@@ -1,0 +1,30 @@
+{
+    "format_version": 2,
+    "header": {
+        "name": "Cristelia",
+        "description": "Cristelia resource pack",
+        "uuid": "491bd447-39e9-40cf-afa4-d1e13e91505d",
+        "version": [
+            1,
+            0,
+            0
+        ],
+        "min_engine_version": [
+            1,
+            19,
+            0
+        ]
+    },
+    "modules": [
+        {
+            "description": "Cristelia resource pack",
+            "type": "resources",
+            "uuid": "23fcf353-c012-4d6e-b12f-eaa869ccdd83",
+            "version": [
+                1,
+                0,
+                0
+            ]
+        }
+    ]
+}

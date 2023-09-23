@@ -1,0 +1,93 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.irongolem.move": {
+			"loop": true,
+			"animation_length": 0.45833,
+			"bones": {
+				"upbody": {
+					"rotation": ["variable.move3", "variable.move2", 0]
+				},
+				"head": {
+					"rotation": [0, 0, "variable.move3"]
+				},
+				"arm0": {
+					"rotation": ["variable.move", 0, 0]
+				},
+				"arm2": {
+					"rotation": ["-20 +variable.move* 1", 0, 0],
+					"position": [0, 1, 0]
+				},
+				"arm1": {
+					"rotation": ["variable.move*-1", 0, 0]
+				},
+				"arm3": {
+					"rotation": ["-20+variable.move*-1", 0, 0],
+					"position": [0, 1, 0]
+				},
+				"leg0": {
+					"rotation": ["variable.move*-1", 0, 0]
+				},
+				"leg1": {
+					"rotation": ["variable.move", 0, 0]
+				}
+			}
+		},
+		"animation.irongolem.target": {
+			"loop": true,
+			"bones": {
+				"bone": {
+					"rotation": [0, 0, 10],
+					"position": [0.1, -0.5, 0]
+				},
+				"bone2": {
+					"rotation": [0, 0, -10],
+					"position": [-0.1, -0.5, 0]
+				}
+			}
+		},
+		"animation.irongolem.attack": {
+			"loop": true,
+			"bones": {
+				"arm0": {
+					"rotation": ["-114 + ((1.5 * math.abs(math.mod(variable.attack_animation_tick - query.frame_alpha, 10) - 5) - 2.5) / 5) * 57.3", 0, 0]
+				},
+				"arm1": {
+					"rotation": ["-114 + ((1.5 * math.abs(math.mod(variable.attack_animation_tick - query.frame_alpha, 10) - 5) - 2.5) / 5) * 57.3", 0, 0]
+				}
+			}
+		},
+		"animation.irongolem.idle": {
+			"loop": true,
+			"bones": {
+				"upbody": {
+					"rotation": ["math.sin(query.life_time*140)*-2+4", 0, 0],
+					"position": [0, "math.cos(query.life_time*140)*0.5", 0]
+				},
+				"head": {
+					"rotation": [0, "math.cos(query.life_time*120+120)*5", 0]
+				},
+				"arm0": {
+					"rotation": [0, 0, "math.cos(query.life_time*140)*2.5+2.5"]
+				},
+				"arm2": {
+					"rotation": [0, 0, -7]
+				},
+				"arm1": {
+					"rotation": [0, 0, "math.cos(query.life_time*140)*-2.5-2.5"]
+				},
+				"arm3": {
+					"rotation": [0, 0, 7]
+				}
+			}
+		},
+		"animation.irongolem.eye": {
+			"loop": true,
+			"bones": {
+				"eye": {
+					"position": ["query.eye_target_x_rotation - this", "query.eye_target_y_rotation - this", 0]
+				}
+			}
+		}
+	}
+}

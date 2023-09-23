@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2193426a-2239-4212-ac3a-0c1b0faa293e" name="Changes" comment="" />
+    <list default="true" id="2193426a-2239-4212-ac3a-0c1b0faa293e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/ResourcePackGenerator.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -65,6 +69,8 @@
       <recent name="D:\Windows\Documents\Serveurs MC\pocketmine\plugins\test\src\items" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Windows\Documents\Serveurs MC\pocketmine\plugins\Cristelia\resources\cristelia_pack\cristelia_pack" />
+      <recent name="D:\Windows\Documents\Serveurs MC\pocketmine\plugins\Cristelia\resources" />
       <recent name="D:\Windows\Documents\Serveurs MC\pocketmine\plugins\Cristelia\src\blocks" />
       <recent name="D:\Windows\Documents\Serveurs MC\pocketmine\plugins\Cristelia\src\items" />
     </key>
@@ -72,7 +78,7 @@
   <component name="RunManager">
     <configuration name="Start" type="ShConfigurationType">
       <option name="SCRIPT_TEXT" value="" />
-      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
+      <option name="INDEPENDENT_SCRIPT_PATH" value="false" />
       <option name="SCRIPT_PATH" value="$PROJECT_DIR$/../../start.cmd" />
       <option name="SCRIPT_OPTIONS" value="" />
       <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
@@ -100,6 +106,7 @@
       <workItem from="1695399377907" duration="2757000" />
       <workItem from="1695406716466" duration="1215000" />
       <workItem from="1695422475489" duration="1510000" />
+      <workItem from="1695425396542" duration="1554000" />
     </task>
     <servers />
   </component>

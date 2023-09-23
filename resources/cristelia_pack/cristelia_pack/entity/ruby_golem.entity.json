@@ -1,0 +1,47 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cristelia:ruby_golem",
+      "materials": { "default": "iron_golem" },
+      "textures": {
+        "default": "textures/entity/iron_golem",
+        "cracked_high": "textures/entity/iron_golem/cracked_high",
+        "cracked_med": "textures/entity/iron_golem/cracked_medium",
+        "cracked_low": "textures/entity/iron_golem/cracked_low",
+        "cracked_none": "textures/entity/iron_golem/cracked_none"
+      },
+      "geometry": {
+        "default": "geometry.ruby_golem"
+      },
+      "animations": {
+        "move": "animation.irongolem.move",
+        "idle": "animation.irongolem.idle",
+        "target": "animation.irongolem.target",
+        "attack": "animation.irongolem.attack",
+        "atk": "controller.animation.iron_golem.arm_movement",
+        "look_at_target": "animation.common.look_at_target"
+      },
+      "scripts": {
+        "pre_animation": [
+          "variable.move = Math.cos(query.modified_distance_moved * 40) * 25 * query.modified_move_speed;",
+          "variable.move2 = Math.cos(query.modified_distance_moved * 40+40) * 10 * query.modified_move_speed;",
+          "variable.move3 = Math.cos(query.modified_distance_moved * 40) * 5 * query.modified_move_speed;",
+          "variable.attackbasic =  Math.sin(variable.attack_time * 180) * -110;"
+        ],
+        "animate": [
+          "look_at_target",
+          "move",
+          "atk",
+          {
+            "idle": "query.ground_speed <= 0.1"
+          },
+          {
+            "target": "query.has_target"
+          }
+        ]
+      },
+      "render_controllers": [ "controller.render.iron_golem", "controller.render.iron_golem_cracks" ]
+    }
+  }
+}

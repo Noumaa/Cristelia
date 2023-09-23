@@ -1,0 +1,16 @@
+{ 
+    "format_version": "1.19.30", 
+    "cristelia:ruby_ore": { 
+        "textures": { 
+            "up": "ruby_ore", 
+            "down": "ruby_ore", 
+            "north": "ruby_ore", 
+            "south": "ruby_ore", 
+            "east": "ruby_ore", 
+            "west": "ruby_ore" 
+        }, 
+        "carried_textures": "ruby_ore", 
+        "brightness_gamma": 1, 
+        "sound": "stone" 
+    } 
+}
