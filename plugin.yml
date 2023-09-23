@@ -1,17 +1,15 @@
-name: Cristelia
-
-main: nouma\cristelia\Main
-src-namespace-prefix: nouma\cristelia
-version: 0.0.1
-api: 5.5.0
+name: LinaCore
+main: nouma\Cristelia\Main
+version: 1.0.0
+api: 5.0.0
+authors:
+  - nouma
+  - HacheBg
 
 loadbefore: CustomCraft
 depend: Customies
 
 commands:
-  cristelia:
-    description: Cristelia command
-    permission: cristelia
   jobs:
     description: Jobs command
     permission: cristelia
