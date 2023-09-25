@@ -5,7 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2193426a-2239-4212-ac3a-0c1b0faa293e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/listeners/EnchantsListener.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/Generator.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/listeners/PopulatorListener.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/items/EmeraldSword.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/registries/BlocksRegisters.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/registries/BlocksRegisters.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/registries/EntitysRegisters.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/registries/EntitysRegisters.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/registries/ItemsRegisters.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/registries/ItemsRegisters.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/registries/RecipesRegisters.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/registries/RecipesRegisters.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,30 +51,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;hachebg&quot;,
-    &quot;last_opened_file_path&quot;: &quot;F:/API PocketMine/API/PocketMine 5.6.0&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;php.override.implement.member.chooser.php.doc&quot;: &quot;NONE&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "hachebg",
+    "last_opened_file_path": "D:/Windows/Documents/Serveurs MC/Cristelia PM/plugins/Cristelia",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "php.override.implement.member.chooser.php.doc": "NONE",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\anthi\Desktop\LinaTest\plugins\Cristelia\src\items" />
       <recent name="D:\Windows\Documents\Serveurs MC\pocketmine\plugins\test\src\items" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Windows\Documents\Serveurs MC\Cristelia PM\plugins\Cristelia\src\listeners" />
       <recent name="D:\Windows\Documents\Serveurs MC\pocketmine\plugins\Cristelia\resources\cristelia_pack\cristelia_pack" />
       <recent name="D:\Windows\Documents\Serveurs MC\pocketmine\plugins\Cristelia\resources" />
       <recent name="D:\Windows\Documents\Serveurs MC\pocketmine\plugins\Cristelia\src\blocks" />
@@ -105,6 +114,9 @@
       <workItem from="1695406716466" duration="1215000" />
       <workItem from="1695422475489" duration="1510000" />
       <workItem from="1695425396542" duration="1750000" />
+      <workItem from="1695471797778" duration="1887000" />
+      <workItem from="1695514717065" duration="1203000" />
+      <workItem from="1695681348644" duration="2351000" />
     </task>
     <servers />
   </component>

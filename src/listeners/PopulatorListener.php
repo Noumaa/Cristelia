@@ -1,13 +1,13 @@
 <?php
 
-namespace nouma\cristelia\blocks;
+namespace nouma\cristelia\listeners;
 
 use customiesdevs\customies\block\CustomiesBlockFactory;
 use Exception;
 use pocketmine\event\Listener;
 use pocketmine\event\world\ChunkPopulateEvent;
 
-class Generator implements Listener
+class PopulatorListener implements Listener
 {
 
     /**

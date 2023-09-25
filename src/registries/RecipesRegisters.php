@@ -4,7 +4,6 @@ namespace nouma\cristelia\registries;
 
 use nouma\cristelia\blocks\RubyBlock;
 use nouma\cristelia\items\DiamondUnclaimFinder;
-use nouma\cristelia\items\EmeraldSword;
 use nouma\cristelia\items\ruby\RubyAxe;
 use nouma\cristelia\items\ruby\RubyHammer;
 use nouma\cristelia\items\ruby\RubyPickaxe;
@@ -23,7 +22,6 @@ class RecipesRegisters {
         RubyAxe::registerRecipes($main);
         RubyShovel::registerRecipes($main);
         RubyHammer::registerRecipes($main);
-        EmeraldSword::registerRecipes($main);
 
         DiamondUnclaimFinder::registerRecipes($main);
     }
