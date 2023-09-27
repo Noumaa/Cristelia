@@ -18,8 +18,8 @@ class CristeliaCmd extends Command
         $this->setPermission(Permissions::CRISTELIA);
     }
 
-    public function execute(CommandSender $sender, string $commandLabel, array $args) {
-
+    public function execute(CommandSender $sender, string $commandLabel, array $args): bool
+    {
         if ($sender instanceof Player) {
             $sender->getInventory()->addItem(CustomiesBlockFactory::getInstance()->get("cristelia:ruby_ore")->asItem());
             $sender->getInventory()->addItem(CustomiesBlockFactory::getInstance()->get("cristelia:ruby_block")->asItem());
