@@ -4,6 +4,7 @@ namespace nouma\cristelia\commands;
 
 use customiesdevs\customies\block\CustomiesBlockFactory;
 use customiesdevs\customies\item\CustomiesItemFactory;
+use nouma\cristelia\entities\MysteryBox;
 use nouma\cristelia\Entities\RubyGolem;
 use nouma\cristelia\permissions\Permissions;
 use pocketmine\command\Command;
@@ -22,16 +23,19 @@ class CristeliaCmd extends Command
     public function execute(CommandSender $sender, string $commandLabel, array $args): bool
     {
         if ($sender instanceof Player) {
-            if (sizeof($args) == 0 || strtolower($args[0]) != "setdayzone") {
-                $sender->sendMessage("/cristelia <setDayZone>");
+            if (sizeof($args) == 0 || !in_array(strtolower($args[0]), ["setdayzone", "spawncrate"])) {
+                $sender->sendMessage("/cristelia <setDayZone/spawnCrate>");
                 return true;
-            }
-
-            try {
-                $sender->getNetworkSession()->sendDataPacket(SetTimePacket::create((int)$args[1]));
-            } catch (\Exception $e) {
-                $sender->sendMessage("§cErreur : " . $e->getMessage());
-            }
+            } else if (strtolower($args[0]) == "setdayzone") {
+                try {
+                    $sender->getNetworkSession()->sendDataPacket(SetTimePacket::create((int)$args[1]));
+                } catch (\Exception $e) {
+                    $sender->sendMessage("§cErreur : " . $e->getMessage());
+                }
+            } else if (strtolower($args[0]) == "spawncrate") {
+                $crate = new MysteryBox($sender->getLocation());
+                $crate->spawnToAll();
+            } else return false;
         }
         return true;
     }

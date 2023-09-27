@@ -1,0 +1,15 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "cristelia:mystery_box",
+      "materials": { "default": "entity_alphatest" },
+      "textures": {
+        "default": "textures/entity/mystery_box"
+      },
+      "geometry": {
+        "default": "geometry.mystery_box"
+      }
+    }
+  }
+}

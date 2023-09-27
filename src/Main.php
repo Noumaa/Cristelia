@@ -20,7 +20,9 @@ use nouma\cristelia\registries\BlocksRegisters;
 use nouma\cristelia\registries\EntitysRegisters;
 use nouma\cristelia\registries\ItemsRegisters;
 use nouma\cristelia\registries\RecipesRegisters;
+use pocketmine\network\mcpe\protocol\types\resourcepacks\ResourcePackStackEntry;
 use pocketmine\plugin\PluginBase;
+use pocketmine\Server;
 
 class Main extends PluginBase
 {

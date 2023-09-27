@@ -1,0 +1,11 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "item/paper"
+	},
+	
+	"overrides": [
+		{"predicate": {"custom_model_data":2000001}, "model": "custom/elitecreatures/mystery_box/mystery_box"},
+		{"predicate": {"custom_model_data":2000002}, "model": "custom/elitecreatures/mystery_box/mystery_key"}
+	]
+}
