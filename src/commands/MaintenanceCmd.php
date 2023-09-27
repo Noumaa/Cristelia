@@ -1,6 +1,6 @@
 <?php
 
-namespace nouma\cristelia\commands\staff;
+namespace nouma\cristelia\commands;
 
 use nouma\cristelia\permissions\Permissions;
 use pocketmine\command\Command;
