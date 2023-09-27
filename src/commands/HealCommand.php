@@ -22,9 +22,9 @@ class HealCommand extends Command
             return;
         }
 
-        $sender->setHealth(10);
-        $sender->getHungerManager()->setFood(10);
-        $sender->getHungerManager()->setSaturation(10);
+        $sender->setHealth(20);
+        $sender->getHungerManager()->setFood(20);
+        $sender->getHungerManager()->setSaturation(20);
         $sender->sendMessage("§7Comme neuf !");
     }
 }

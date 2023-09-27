@@ -1,13 +1,13 @@
 <?php
 
-namespace nouma\cristelia;
+namespace nouma\cristelia\listeners;
 
 use DaPigGuy\PiggyFactions\PiggyFactions;
 use Joshet18\CustomScoreboard\PlayerScoreTagEvent;
 use pocketmine\event\Listener;
 use pocketmine\player\Player;
 
-class CustomScoreTagHook implements Listener
+class CustomScoreTagListener implements Listener
 {
 
     public function onPlayerTags(PlayerScoreTagEvent $ev): void {

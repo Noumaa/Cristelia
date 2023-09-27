@@ -8,6 +8,7 @@ use nouma\cristelia\commands\HealCommand;
 use nouma\cristelia\commands\MaintenanceCmd;
 use nouma\cristelia\items\unclaimfinder\PlayerListener;
 use nouma\cristelia\jobs\BreakEvent;
+use nouma\cristelia\listeners\CustomScoreTagListener;
 use nouma\cristelia\listeners\DayzoneListener;
 use nouma\cristelia\listeners\EnchantsListener;
 use nouma\cristelia\listeners\JoinListener;
@@ -61,8 +62,7 @@ class Main extends PluginBase
         $this->getServer()->getPluginManager()->registerEvents(new BreakEvent(), $this);
         $this->getServer()->getPluginManager()->registerEvents(new EnchantsListener(), $this);
         $this->getServer()->getPluginManager()->registerEvents(new DayzoneListener(), $this);
-
-        $this->getServer()->getPluginManager()->registerEvents(new CustomScoreTagHook(), $this);
+        $this->getServer()->getPluginManager()->registerEvents(new CustomScoreTagListener(), $this);
 
         parent::onEnable();
     }
