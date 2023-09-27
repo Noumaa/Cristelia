@@ -5,13 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2532cf5d-0ac1-4c2f-b1ef-fd4a4d3118ec" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/commands/HealCommand.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tasks/TimeDayZoneTask.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/commands/CristeliaCmd.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/CristeliaCmd.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/permissions/PermissionManager.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/permissions/Permissions.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/permissions/Permissions.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +82,7 @@
       <option name="presentableId" value="Default" />
       <updated>1695841173851</updated>
       <workItem from="1695841174887" duration="1415000" />
-      <workItem from="1695842663373" duration="1138000" />
+      <workItem from="1695842663373" duration="3326000" />
     </task>
     <servers />
   </component>

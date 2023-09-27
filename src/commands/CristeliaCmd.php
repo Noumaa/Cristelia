@@ -22,18 +22,16 @@ class CristeliaCmd extends Command
     public function execute(CommandSender $sender, string $commandLabel, array $args): bool
     {
         if ($sender instanceof Player) {
-//            $sender->getInventory()->addItem(CustomiesBlockFactory::getInstance()->get("cristelia:ruby_ore")->asItem());
-//            $sender->getInventory()->addItem(CustomiesBlockFactory::getInstance()->get("cristelia:ruby_block")->asItem());
-//            $sender->getInventory()->addItem(CustomiesItemFactory::getInstance()->get("cristelia:ruby"));
-//            $sender->getInventory()->addItem(CustomiesItemFactory::getInstance()->get("cristelia:ruby_sword"));
-//            $sender->getInventory()->addItem(CustomiesItemFactory::getInstance()->get("cristelia:ruby_pickaxe"));
-//            $sender->getInventory()->addItem(CustomiesItemFactory::getInstance()->get("cristelia:ruby_axe"));
-//            $sender->getInventory()->addItem(CustomiesItemFactory::getInstance()->get("cristelia:ruby_shovel"));
-//            $sender->getInventory()->addItem(CustomiesItemFactory::getInstance()->get("cristelia:diamond_unclaim_finder"));
-//            $entity = new RubyGolem($sender->getLocation());
-//            $entity->spawnToAll();
+            if (sizeof($args) == 0 || strtolower($args[0]) != "setdayzone") {
+                $sender->sendMessage("/cristelia <setDayZone>");
+                return true;
+            }
 
-            $sender->getNetworkSession()->sendDataPacket(SetTimePacket::create((int) $args[0]));
+            try {
+                $sender->getNetworkSession()->sendDataPacket(SetTimePacket::create((int)$args[1]));
+            } catch (\Exception $e) {
+                $sender->sendMessage("§cErreur : " . $e->getMessage());
+            }
         }
         return true;
     }

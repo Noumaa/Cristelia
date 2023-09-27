@@ -18,10 +18,15 @@ use nouma\cristelia\registries\BlocksRegisters;
 use nouma\cristelia\registries\EntitysRegisters;
 use nouma\cristelia\registries\ItemsRegisters;
 use nouma\cristelia\registries\RecipesRegisters;
+use pocketmine\event\EventPriority;
+use pocketmine\event\server\DataPacketSendEvent;
+use pocketmine\math\Vector3;
+use pocketmine\network\mcpe\protocol\SetTimePacket;
 use pocketmine\plugin\PluginBase;
 
 class Main extends PluginBase
 {
+
     private static Main $instance;
 
     public static function getInstance(): Main {
@@ -59,6 +64,20 @@ class Main extends PluginBase
         $this->getServer()->getPluginManager()->registerEvents(new BreakEvent(), $this);
         $this->getServer()->getPluginManager()->registerEvents(new EnchantsListener(), $this);
 
+        $this->initDayZone();
+
         parent::onEnable();
+    }
+
+    public function initDayZone() {
+        $this->getServer()->getPluginManager()->registerEvent(DataPacketSendEvent::class, function(DataPacketSendEvent $event) : void {
+            foreach ($event->getPackets() as $packet) {
+                if ($packet instanceof SetTimePacket) {
+                    $position = $event->getTargets()[0]->getPlayer()->getPosition();
+                    if ($position->distance(new Vector3(-1, 63, 45)) > 20) return;
+                    $packet->time = 6000;
+                }
+            }
+        }, EventPriority::HIGHEST, $this);
     }
 }
