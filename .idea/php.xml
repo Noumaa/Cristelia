@@ -37,6 +37,8 @@
       <path value="$PROJECT_DIR$/vendor/pocketmine/raklib" />
       <path value="$PROJECT_DIR$/vendor/pocketmine/raklib-ipc" />
       <path value="$PROJECT_DIR$/vendor/pocketmine/snooze" />
+      <path value="$PROJECT_DIR$/../PiggyFactions" />
+      <path value="$PROJECT_DIR$/../CustomScore" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.1">
