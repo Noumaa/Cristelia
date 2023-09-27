@@ -8,6 +8,7 @@ use nouma\cristelia\Entities\RubyGolem;
 use nouma\cristelia\permissions\Permissions;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
+use pocketmine\network\mcpe\protocol\SetTimePacket;
 use pocketmine\player\Player;
 
 class CristeliaCmd extends Command
@@ -21,16 +22,18 @@ class CristeliaCmd extends Command
     public function execute(CommandSender $sender, string $commandLabel, array $args): bool
     {
         if ($sender instanceof Player) {
-            $sender->getInventory()->addItem(CustomiesBlockFactory::getInstance()->get("cristelia:ruby_ore")->asItem());
-            $sender->getInventory()->addItem(CustomiesBlockFactory::getInstance()->get("cristelia:ruby_block")->asItem());
-            $sender->getInventory()->addItem(CustomiesItemFactory::getInstance()->get("cristelia:ruby"));
-            $sender->getInventory()->addItem(CustomiesItemFactory::getInstance()->get("cristelia:ruby_sword"));
-            $sender->getInventory()->addItem(CustomiesItemFactory::getInstance()->get("cristelia:ruby_pickaxe"));
-            $sender->getInventory()->addItem(CustomiesItemFactory::getInstance()->get("cristelia:ruby_axe"));
-            $sender->getInventory()->addItem(CustomiesItemFactory::getInstance()->get("cristelia:ruby_shovel"));
-            $sender->getInventory()->addItem(CustomiesItemFactory::getInstance()->get("cristelia:diamond_unclaim_finder"));
-            $entity = new RubyGolem($sender->getLocation());
-            $entity->spawnToAll();
+//            $sender->getInventory()->addItem(CustomiesBlockFactory::getInstance()->get("cristelia:ruby_ore")->asItem());
+//            $sender->getInventory()->addItem(CustomiesBlockFactory::getInstance()->get("cristelia:ruby_block")->asItem());
+//            $sender->getInventory()->addItem(CustomiesItemFactory::getInstance()->get("cristelia:ruby"));
+//            $sender->getInventory()->addItem(CustomiesItemFactory::getInstance()->get("cristelia:ruby_sword"));
+//            $sender->getInventory()->addItem(CustomiesItemFactory::getInstance()->get("cristelia:ruby_pickaxe"));
+//            $sender->getInventory()->addItem(CustomiesItemFactory::getInstance()->get("cristelia:ruby_axe"));
+//            $sender->getInventory()->addItem(CustomiesItemFactory::getInstance()->get("cristelia:ruby_shovel"));
+//            $sender->getInventory()->addItem(CustomiesItemFactory::getInstance()->get("cristelia:diamond_unclaim_finder"));
+//            $entity = new RubyGolem($sender->getLocation());
+//            $entity->spawnToAll();
+
+            $sender->getNetworkSession()->sendDataPacket(SetTimePacket::create((int) $args[0]));
         }
         return true;
     }

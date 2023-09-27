@@ -4,6 +4,7 @@ namespace nouma\cristelia;
 
 use Jibix\Forms\Forms;
 use nouma\cristelia\commands\CristeliaCmd;
+use nouma\cristelia\commands\HealCommand;
 use nouma\cristelia\commands\MaintenanceCmd;
 use nouma\cristelia\items\unclaimfinder\PlayerListener;
 use nouma\cristelia\jobs\BreakEvent;
@@ -12,7 +13,6 @@ use nouma\cristelia\listeners\JoinListener;
 use nouma\cristelia\listeners\PopulatorListener;
 use nouma\cristelia\listeners\PreLoginListener;
 use nouma\cristelia\listeners\QuitListener;
-use nouma\cristelia\permissions\PermissionManager;
 use nouma\cristelia\permissions\Permissions;
 use nouma\cristelia\registries\BlocksRegisters;
 use nouma\cristelia\registries\EntitysRegisters;
@@ -32,7 +32,6 @@ class Main extends PluginBase
         self::$instance = $this;
 
         Permissions::init();
-        PermissionManager::init();
 
         ItemsRegisters::registerAll();
         BlocksRegisters::registerAll();
@@ -41,6 +40,7 @@ class Main extends PluginBase
 
         $this->getServer()->getCommandMap()->register("cristelia", new MaintenanceCmd());
         $this->getServer()->getCommandMap()->register("cristelia", new CristeliaCmd());
+        $this->getServer()->getCommandMap()->register("cristelia", new HealCommand());
 
         if (!is_dir(Main::getInstance()->getDataFolder() . "players/"))
             mkdir(Main::getInstance()->getDataFolder() . "players/");
