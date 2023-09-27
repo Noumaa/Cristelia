@@ -5,6 +5,8 @@
         "pocketmine/bedrock-protocol": "^24.0"
     },
     "autoload": {
-        "nouma\\cristelia": "src"
+        "psr-4": {
+            "nouma\\cristelia\\": "src"
+        }
     }
 }

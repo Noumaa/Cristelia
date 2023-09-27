@@ -1,7 +1,6 @@
 name: Cristelia
 main: nouma\cristelia\Main
 
-src-namespace-prefix: nouma\cristelia
 version: 1.0.0
 api: 5.0.0
 

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2532cf5d-0ac1-4c2f-b1ef-fd4a4d3118ec" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/Cristelia.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Cristelia.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution>
+      <executable path="composer" />
+    </execution>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/brick/math" />
+      <path value="$PROJECT_DIR$/vendor/ramsey/collection" />
+      <path value="$PROJECT_DIR$/vendor/ramsey/uuid" />
+      <path value="$PROJECT_DIR$/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/adhocore/json-comment" />
+      <path value="$PROJECT_DIR$/vendor/pocketmine/bedrock-block-upgrade-schema" />
+      <path value="$PROJECT_DIR$/vendor/pocketmine/bedrock-data" />
+      <path value="$PROJECT_DIR$/vendor/pocketmine/bedrock-item-upgrade-schema" />
+      <path value="$PROJECT_DIR$/vendor/pocketmine/bedrock-protocol" />
+      <path value="$PROJECT_DIR$/vendor/pocketmine/binaryutils" />
+      <path value="$PROJECT_DIR$/vendor/pocketmine/callback-validator" />
+      <path value="$PROJECT_DIR$/vendor/pocketmine/color" />
+      <path value="$PROJECT_DIR$/vendor/pocketmine/errorhandler" />
+      <path value="$PROJECT_DIR$/vendor/pocketmine/locale-data" />
+      <path value="$PROJECT_DIR$/vendor/pocketmine/log" />
+      <path value="$PROJECT_DIR$/vendor/pocketmine/math" />
+      <path value="$PROJECT_DIR$/vendor/pocketmine/nbt" />
+      <path value="$PROJECT_DIR$/vendor/pocketmine/netresearch-jsonmapper" />
+      <path value="$PROJECT_DIR$/vendor/pocketmine/pocketmine-mp" />
+      <path value="$PROJECT_DIR$/vendor/pocketmine/raklib" />
+      <path value="$PROJECT_DIR$/vendor/pocketmine/raklib-ipc" />
+      <path value="$PROJECT_DIR$/vendor/pocketmine/snooze" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="2Vza4Md4fzN6gly8wuyjAYdypNc" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="ComposerRunConfigurationType" factoryName="Composer Script">
+      <option name="pathToComposerJson" value="$PROJECT_DIR$/composer.json" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2532cf5d-0ac1-4c2f-b1ef-fd4a4d3118ec" name="Changes" comment="" />
+      <created>1695841173851</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1695841173851</updated>
+      <workItem from="1695841174887" duration="401000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
